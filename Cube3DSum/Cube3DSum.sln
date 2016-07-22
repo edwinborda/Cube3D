@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistences", "Persistences", "{FC4EEC24-5750-4666-B569-4985A1216164}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{537623C4-14DD-428E-AE27-F5DC96008FA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entity", "Entity", "{C96EFAFE-3847-46F5-991D-2600B3D336C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{ABDDF760-3770-44C6-BB85-78ACD0B68CDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cube3DSum.Persistences", "Cube3DSum.Persistences\Cube3DSum.Persistences.csproj", "{F3E1CD6C-CB9A-4FEA-AC2E-E310518171B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cube3D.BusinessRules", "Cube3D.BusinessRules\Cube3D.BusinessRules.csproj", "{CAE12C2F-8035-40DF-9261-FA2B62D4FBB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cube3D.Entity", "Cube3D.Entity\Cube3D.Entity.csproj", "{D35FC878-548A-4578-9254-B074753C18B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3E1CD6C-CB9A-4FEA-AC2E-E310518171B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E1CD6C-CB9A-4FEA-AC2E-E310518171B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E1CD6C-CB9A-4FEA-AC2E-E310518171B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E1CD6C-CB9A-4FEA-AC2E-E310518171B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE12C2F-8035-40DF-9261-FA2B62D4FBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE12C2F-8035-40DF-9261-FA2B62D4FBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE12C2F-8035-40DF-9261-FA2B62D4FBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE12C2F-8035-40DF-9261-FA2B62D4FBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35FC878-548A-4578-9254-B074753C18B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35FC878-548A-4578-9254-B074753C18B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35FC878-548A-4578-9254-B074753C18B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35FC878-548A-4578-9254-B074753C18B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3E1CD6C-CB9A-4FEA-AC2E-E310518171B3} = {FC4EEC24-5750-4666-B569-4985A1216164}
+		{CAE12C2F-8035-40DF-9261-FA2B62D4FBB5} = {537623C4-14DD-428E-AE27-F5DC96008FA6}
+		{D35FC878-548A-4578-9254-B074753C18B8} = {C96EFAFE-3847-46F5-991D-2600B3D336C1}
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3} = {ABDDF760-3770-44C6-BB85-78ACD0B68CDF}
+	EndGlobalSection
+EndGlobal
