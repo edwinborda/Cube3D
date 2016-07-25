@@ -10,3 +10,15 @@ C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3DSum.Persistences\bin\D
 C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3DSum.Persistences\obj\Debug\Cube3D.Persistences.csprojResolveAssemblyReference.cache
 C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3DSum.Persistences\obj\Debug\Cube3D.Persistences.dll
 C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3DSum.Persistences\obj\Debug\Cube3D.Persistences.pdb
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\Cube3D.Persistences.dll.config
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\Cube3D.Persistences.dll
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\Cube3D.Persistences.pdb
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\Cube3D.Entity.dll
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\EntityFramework.dll
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\Cube3D.Entity.pdb
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\EntityFramework.xml
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\obj\Debug\Cube3D.Persistences.csprojResolveAssemblyReference.cache
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\obj\Debug\Cube3D.Persistences.dll
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3DSum.Persistences\obj\Debug\Cube3D.Persistences.pdb

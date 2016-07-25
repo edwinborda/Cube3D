@@ -8,25 +8,51 @@
 <div class="panel panel-default">
     <div class="panel-heading">Calculate sum from 3-D Matrix</div>
     <div class="panel-body">
-        <div class="row">
+        @using (Html.BeginForm("SizingMatrix", "Cube", FormMethod.Post))
+        {
+            @Html.HiddenFor(m=>m.Id)
             <div class="form-group">
-                <div class="col-lg-6">
-                    <label class="col-lg-6">Enter the number of the operations:</label>
-                    @Html.TextBoxFor(m => m.NumOperaciones)
-                    @Html.ValidationMessageFor(m=>m.NumOperaciones)
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label class="control-label no-padding-right">Enter the number of the operations:</label>
+                        @Html.TextBoxFor(m => m.NumOperaciones)
+                        @Html.ValidationMessageFor(m => m.NumOperaciones)
+                    </div>
+
+                    <div class="col-xs-6">
+                        <label class="col-xs-6 control-label no-padding-right">Set the size of the cube:</label>
+                        @Html.TextBoxFor(m => m.TamMatriz)
+                        @Html.ValidationMessageFor(m => m.TamMatriz)
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6" style="text-align: right;">
+                        <button class=" btn btn-default" type="submit" value="Submit">Sizing Matrix</button>
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="col-lg-6">
-                    <label class="col-lg-6">Set the size of the cube:</label>
-                    @Html.TextBoxFor(m=>m.TamMatriz)
-                    @Html.ValidationMessageFor(m => m.TamMatriz)
-                </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <label class="col-xs-6 control-label no-padding-right">Queries: </label>
+            <div class="col-xs-12">
+                <textarea id="query" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-xs-6 control-label no-padding-right">Output: </label>
+            <div class="col-xs-12">
+                <textarea id="output" class="form-control" rows="3"></textarea>
             </div>
         </div>
     </div>
 
+
 </div>
-
-
-
+@section scripts{
+    <script src="~/Scripts/Cube.js"></script>
+}

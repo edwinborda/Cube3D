@@ -10,12 +10,12 @@ namespace Cube3D.BusinessRules
 {
     public class Cube3DSum
     {
-        enum key
+        public enum key
         {
             UPDATE,
             QUERY
         }
-        private int[,,] SizingCube(int tamM)
+        public int[,,] SizingCube(int tamM)
         {
             var m = new int[tamM, tamM, tamM];
             for (int i = 1; i <= tamM; i++)
@@ -72,6 +72,22 @@ namespace Cube3D.BusinessRules
         public bool InsertMatriz(Matriz entity)
         {
             return PersistencesFacade.GetInstance.SaveInfMatrix(entity);
+        }
+
+        public int[, ,] SetValuesMatrix(int IdMatrix,int[,,] Matrix)
+        {
+            List<DetalleMatriz> list=PersistencesFacade.GetInstance.GetDetalleMatrix(IdMatrix);
+            if(list.Count > 0)
+                foreach (var item in list)
+                {
+                    int x,y,z=0;
+                    int.TryParse(item.Coordenada.Split(',')[0],out x);
+
+                    int.TryParse(item.Coordenada.Split(',')[1],out y);
+                    int.TryParse(item.Coordenada.Split(',')[2], out z);
+                    Matrix[x, y, z] = item.Valor;
+                }
+            return Matrix;
         }
 
     }

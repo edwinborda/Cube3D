@@ -2,3 +2,8 @@ C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.Entity\bin\Debug\Cube
 C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.Entity\bin\Debug\Cube3D.Entity.pdb
 C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.Entity\obj\Debug\Cube3D.Entity.dll
 C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.Entity\obj\Debug\Cube3D.Entity.pdb
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3D.Entity\bin\Debug\Cube3D.Entity.dll
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3D.Entity\bin\Debug\Cube3D.Entity.pdb
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3D.Entity\obj\Debug\Cube3D.Entity.csprojResolveAssemblyReference.cache
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3D.Entity\obj\Debug\Cube3D.Entity.dll
+C:\Users\bordaed8\Documents\MisFuentes\Cube 3D Sum\Cube3DSum\Cube3D.Entity\obj\Debug\Cube3D.Entity.pdb
