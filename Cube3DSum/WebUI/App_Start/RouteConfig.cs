@@ -12,7 +12,7 @@ namespace ASP.NET_MVC5_Bootstrap3_3_1_LESS
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Cube", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

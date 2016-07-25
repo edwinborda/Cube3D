@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Cube3DSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cube3D.Entity\Cube3D.Entity.csproj">
+      <Project>{d35fc878-548a-4578-9254-b074753c18b8}</Project>
+      <Name>Cube3D.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cube3DSum.Persistences\Cube3D.Persistences.csproj">
+      <Project>{f3e1cd6c-cb9a-4fea-ac2e-e310518171b3}</Project>
+      <Name>Cube3D.Persistences</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

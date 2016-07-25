@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
 namespace Cube3D.Entity
@@ -17,7 +12,7 @@ namespace Cube3D.Entity
 
         public string Coordenada { get; set; }
 
-        [Range(0,)]
+        [Range(0,100000)]
         public int Valor { get; set; }
 
     }

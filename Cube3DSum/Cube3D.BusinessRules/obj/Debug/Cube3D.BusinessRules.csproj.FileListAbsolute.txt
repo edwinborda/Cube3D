@@ -1,0 +1,11 @@
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\Cube3D.BusinessRules.dll
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\Cube3D.BusinessRules.pdb
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\Cube3D.Entity.dll
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\EntityFramework.dll
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\Cube3D.Entity.pdb
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\EntityFramework.xml
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\obj\Debug\Cube3D.BusinessRules.csprojResolveAssemblyReference.cache
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\obj\Debug\Cube3D.BusinessRules.dll
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\obj\Debug\Cube3D.BusinessRules.pdb
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\Cube3D.Persistences.dll
+C:\Users\Edwin Borda\Documents\Desarrollo\Cube3DSum\Cube3D.BusinessRules\bin\Debug\Cube3D.Persistences.pdb

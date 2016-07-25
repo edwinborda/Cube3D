@@ -1,0 +1,32 @@
+﻿@model Cube3D.Entity.Matriz
+@{
+    ViewBag.Title = "Cube 3D sum";
+}
+
+<h2>Cube summation</h2>
+@Html.ValidationSummary(true)
+<div class="panel panel-default">
+    <div class="panel-heading">Calculate sum from 3-D Matrix</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="form-group">
+                <div class="col-lg-6">
+                    <label class="col-lg-6">Enter the number of the operations:</label>
+                    @Html.TextBoxFor(m => m.NumOperaciones)
+                    @Html.ValidationMessageFor(m=>m.NumOperaciones)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-6">
+                    <label class="col-lg-6">Set the size of the cube:</label>
+                    @Html.TextBoxFor(m=>m.TamMatriz)
+                    @Html.ValidationMessageFor(m => m.TamMatriz)
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
