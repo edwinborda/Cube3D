@@ -68,10 +68,14 @@ namespace Cube3D.Persistences
 
         public Matriz GetMatrixBySize(int length)
         {
+            var _matriz = new Matriz();
             using (var db= new Cube3DContext())
             {
-                return db.Matriz.Where(p => p.TamMatriz == length).First();
+                var  a =db.Matriz.Where(p => p.TamMatriz == length);
+                if(a.Count() > 0)
+                    _matriz= a.First();
             }
+            return _matriz;
         }
     }
 }

@@ -10,6 +10,8 @@
     <div class="panel-body">
         @using (Html.BeginForm("SizingMatrix", "Cube", FormMethod.Post))
         {
+            <h5>Enter the size of the cube and the number of operations, then you dimension the array and enter queries.S</h5>
+            
             @Html.HiddenFor(m=>m.Id)
             <div class="form-group">
                 <div class="row">
@@ -37,14 +39,14 @@
         <div class="row">
             <label class="col-xs-6 control-label no-padding-right">Queries: </label>
             <div class="col-xs-12">
-                <textarea id="query" class="form-control" rows="3"></textarea>
+                <textarea id="query" class="form-control" rows="6" disabled></textarea>
             </div>
         </div>
 
         <div class="row">
             <label class="col-xs-6 control-label no-padding-right">Output: </label>
             <div class="col-xs-12">
-                <textarea id="output" class="form-control" rows="3"></textarea>
+                <textarea id="output" class="form-control" rows="6" disabled></textarea>
             </div>
         </div>
     </div>
