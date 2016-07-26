@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Cube3D.Entity
 {
-    [Table("DetalleMatriz")]
+    [Table("Matriz")]
     public class Matriz
     {
         public int Id { get; set; }

@@ -18,38 +18,33 @@ namespace Cube3D.BusinessRules
         public int[,,] SizingCube(int tamM)
         {
             var m = new int[tamM, tamM, tamM];
-            for (int i = 1; i <= tamM; i++)
-            {
-                for (int j = 1; j <= tamM; j++)
-                {
-                    for (int k = 1; k <= tamM; k++)
-                    {
-                        m[i, j, k] = 0;
-                    }
-                }
-            }
+            
             return m;
         }
         
         public int CubeSum3(string query, int[,,] matrix)
         {
-            var nque = query.Replace(key.QUERY.ToString(), "");
-            var coordxIn = Convert.ToInt32(query.Split(';')[0]);
-            var coordyIn = Convert.ToInt32(query.Split(';')[1]);
-            var coordzin = Convert.ToInt32(query.Split(';')[2]);
-            var coordxFn = Convert.ToInt32(query.Split(';')[3]);
-            var coordyFn = Convert.ToInt32(query.Split(';')[4]);
-            var coordzFn = Convert.ToInt32(query.Split(';')[5]);
+            var nque = query.Replace(key.QUERY.ToString()+" ", "");
+            var coordxIn = Convert.ToInt32(nque.Split(' ')[0]);
+            var coordyIn = Convert.ToInt32(nque.Split(' ')[1]);
+            var coordzin = Convert.ToInt32(nque.Split(' ')[2]);
+            var coordxFn = Convert.ToInt32(nque.Split(' ')[3]);
+            var coordyFn = Convert.ToInt32(nque.Split(' ')[4]);
+            var coordzFn = Convert.ToInt32(nque.Split(' ')[5]);
 
             var result = 0;
-            for (int i = coordxIn; i < coordxFn; i++)
+            for (int i = coordxIn-1; i < matrix.GetLength(0); i++)
             {
-                for (int j = coordyIn; i < coordyFn; i++)
+                for (int j = coordyIn-1; j < matrix.GetLength(1); j++)
                 {
-                    for (int k = coordzin; i < coordzFn; i++)
+                    for (int k = coordzin-1; k < matrix.GetLength(2); k++)
                     {
+
                         if (matrix[i, j, k] > 0)
                             result += matrix[i, j, k];
+
+                        if (i == coordxFn-1 && j == coordyFn-1 && k == coordzFn-1)
+                            return result;
                     }
                 }
             }
@@ -58,11 +53,11 @@ namespace Cube3D.BusinessRules
 
         public bool SetValues(string query,int matrixId)
         {
-            var nQuery = query.Replace(key.UPDATE.ToString(),"");
-            var coordx = Convert.ToInt32(query.Split(';')[0]);
-            var coordy = Convert.ToInt32(query.Split(';')[1]);
-            var coordz = Convert.ToInt32(query.Split(';')[2]);
-            var value = Convert.ToInt32(query.Split(';')[4]);
+            var nQuery = query.Replace(key.UPDATE.ToString()+" ","");
+            var coordx = Convert.ToInt32(nQuery.Split(' ')[0]);
+            var coordy = Convert.ToInt32(nQuery.Split(' ')[1]);
+            var coordz = Convert.ToInt32(nQuery.Split(' ')[2]);
+            var value = Convert.ToInt32(nQuery.Split(' ')[3]);
 
             var m = new DetalleMatriz() { Coordenada = coordx + "," + coordy + "," + coordz, Valor = value, MatrizId=matrixId };
             return PersistencesFacade.GetInstance.SaveDetMatrix(m);
@@ -85,10 +80,14 @@ namespace Cube3D.BusinessRules
 
                     int.TryParse(item.Coordenada.Split(',')[1],out y);
                     int.TryParse(item.Coordenada.Split(',')[2], out z);
-                    Matrix[x, y, z] = item.Valor;
+                    Matrix[x-1, y-1, z-1] = item.Valor;
                 }
             return Matrix;
         }
 
+        public Matriz GetMatriz(int length)
+        {
+            return PersistencesFacade.GetInstance.GetMatrixBySize(length);
+        }
     }
 }

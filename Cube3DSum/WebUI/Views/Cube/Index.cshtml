@@ -14,17 +14,15 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-xs-6">
-                        <label class="control-label no-padding-right">Enter the number of the operations:</label>
-                        @Html.TextBoxFor(m => m.NumOperaciones)
-                        @Html.ValidationMessageFor(m => m.NumOperaciones)
-                    </div>
-
-                    <div class="col-xs-6">
                         <label class="col-xs-6 control-label no-padding-right">Set the size of the cube:</label>
                         @Html.TextBoxFor(m => m.TamMatriz)
                         @Html.ValidationMessageFor(m => m.TamMatriz)
                     </div>
-
+                    <div class="col-xs-6">
+                        <label class="control-label no-padding-right">Enter the number of the operations:</label>
+                        @Html.TextBoxFor(m => m.NumOperaciones)
+                        @Html.ValidationMessageFor(m => m.NumOperaciones)
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6" style="text-align: right;">

@@ -65,5 +65,13 @@ namespace Cube3D.Persistences
                 return (result > 0);
             }
         }
+
+        public Matriz GetMatrixBySize(int length)
+        {
+            using (var db= new Cube3DContext())
+            {
+                return db.Matriz.Where(p => p.TamMatriz == length).First();
+            }
+        }
     }
 }

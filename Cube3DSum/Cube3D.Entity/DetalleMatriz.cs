@@ -15,5 +15,7 @@ namespace Cube3D.Entity
         [Range(0,100000)]
         public int Valor { get; set; }
 
+        public virtual Matriz Matriz { get; set; }
+
     }
 }

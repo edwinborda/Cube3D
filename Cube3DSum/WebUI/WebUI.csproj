@@ -205,11 +205,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\App_Start\BundleConfig.cs" />
+    <Compile Include="Controllers\App_Start\FilterConfig.cs" />
+    <Compile Include="Controllers\App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CubeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
